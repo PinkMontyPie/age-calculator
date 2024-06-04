@@ -14,25 +14,25 @@ function calculate() {
 	const hours = minutes / 60;
 	const days = Math.trunc(hours / 24);
 
-	results.unshift(plural(seconds, 'seconds:second:seconds:seconds:seconds:seconds'));
-	results.unshift(plural(minutes, 'minutes:minute:minutes:minutes:minutes:minutes'));
-	results.unshift(plural(hours, 'hours:hour:hours:hours:hours:hours'));
-	results.unshift(plural(days, 'days:day:days:days:days:days'));
+	results.unshift(plural(seconds, 'วินาที:วินาที:วินาที:วินาที:วินาที:วินาที'));
+	results.unshift(plural(minutes, 'นาที:นาที:นาที:นาที:นาที:นาที'));
+	results.unshift(plural(hours, 'ชั่วโมง:ชั่วโมง:ชั่วโมง:ชั่วโมง:ชั่วโมง:ชั่วโมง'));
+	results.unshift(plural(days, 'วัน:วัน:วัน:วัน:วัน:วัน'));
 
 	/*Weeks*/
 	const weeks = Math.trunc(days / 7);
 	const weekRemainDays = days % 7;
 	let weekResult = '';
-	if (weeks > 0) weekResult = plural(weeks, 'weeks:week:weeks:weeks:weeks:weeks');
-	if (weeks > 0 && weekRemainDays > 0) weekResult += ` ${plural(weekRemainDays, 'days:day:days:days:days:days')}`;
+	if (weeks > 0) weekResult = plural(weeks, 'สัปดาห์:สัปดาห์:สัปดาห์:สัปดาห์:สัปดาห์:สัปดาห์');
+	if (weeks > 0 && weekRemainDays > 0) weekResult += ` ${plural(weekRemainDays, 'วัน:วัน:วัน:วัน:วัน:วัน')}`;
 
 	if (weekResult.length) results.unshift(weekResult);
 
 	/*Months*/
 	let monthsResult = '';
 	let months = 24 * diff.y + diff.m;
-	if (months > 0) monthsResult = plural(months, 'months:month:months:months:months:months');
-	if (months > 0 && diff.d > 0) monthsResult += ` ${plural(diff.d, 'days:day:days:days:days:days')}`;
+	if (months > 0) monthsResult = plural(months, 'เดือน:เดือน:เดือน:เดือน:เดือน:เดือน');
+	if (months > 0 && diff.d > 0) monthsResult += ` ${plural(diff.d, 'วัน:วัน:วัน:วัน:วัน:วัน')}`;
 
 	if (monthsResult.length) results.unshift(monthsResult);
 
@@ -40,7 +40,7 @@ function calculate() {
 	let yearsResult = '';
 	const years = diff.y;
 	if (years > 0) {
-		yearsResult = `${plural(diff.y, 'years:year:years:years:years:years')} ${plural(diff.m, 'months:month:months:months:months:months')} ${plural(diff.w, 'weeks:week:weeks:weeks:weeks:weeks')} ${plural(diff.d, 'days:day:days:days:days:days')}`;
+		yearsResult = `${plural(diff.y, 'ปี:ปี:ปี:ปี:ปี:ปี')} ${plural(diff.m, 'เดือน:เดือน:เดือน:เดือน:เดือน:เดือน')} ${plural(diff.w, 'สัปดาห์:สัปดาห์:สัปดาห์:สัปดาห์:สัปดาห์:สัปดาห์')} ${plural(diff.d, 'วัน:วัน:วัน:วัน:วัน:วัน')}`;
 	}
 	if (yearsResult.length) results.unshift(yearsResult);
 
@@ -82,16 +82,16 @@ function dateDiff(startDate, endDate) {
 
 function plural(number, label) {
 	/*Days*/
-	if (label === 'd') return number === 1 ? number + ' day' : number + ' days';
+	if (label === 'd') return number === 1 ? number + ' วัน' : number + ' วัน';
 
 	/*Week*/
-	if (label === 'w') return number === 1 ? number + ' week' : number + ' weeks';
+	if (label === 'w') return number === 1 ? number + ' สัปดาห์' : number + ' สัปดาห์';
 
 	/*Month*/
-	if (label === 'm') return number === 1 ? number + ' month' : number + ' months';
+	if (label === 'm') return number === 1 ? number + ' เดือน' : number + ' เดือน';
 
 	/*Year*/
-	if (label === 'y') return number === 1 ? number + ' year' : number + ' years';
+	if (label === 'y') return number === 1 ? number + ' ปี' : number + ' ปี';
 }
 
 function generateCalendar(date, calendar = 'result-age--from') {
