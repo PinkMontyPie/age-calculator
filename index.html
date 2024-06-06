@@ -42,7 +42,6 @@
               <div class="input-wrapper row">
                 <label class="input col">
                   <p class="input__title">วันเกิด</p>
-
                   <div class="input-field row">
                     <input
                       type="text"
@@ -102,7 +101,6 @@
               <div class="input-wrapper row">
                 <label class="input col">
                   <p class="input__title">อายุ ณ วันที่</p>
-
                   <div class="input-field row">
                     <input
                       type="text"
@@ -159,7 +157,7 @@
                     </svg>
                   </div>
 
-                  <div class="input-hints row">
+                  <div class="input-hints input-pad row">
                     <button
                       class="input-hints__hint"
                       onclick="setDate('date', -1)"
@@ -194,63 +192,6 @@
             <div
               class="calculator-content calculator-content--gray calculator-content--footer calculator-content--small row"
             >
-              <button
-                class="system-switcher system-switcher--format"
-                onclick="toggleSystem(this)"
-                aria-label="Switch System"
-              >
-                <div class="system-switcher__circle"></div>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.84254 5.61418C7.84254 4.72269 8.56524 4 9.45673 4C10.7869 4 11.5462 5.51856 10.7481 6.58269L7.84254 10.4567H11.4745M3 5.29135L4.08967 4.41961C4.30105 4.2505 4.61418 4.401 4.61418 4.6717V10.4567"
-                    stroke="#9CA3AF"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 5.61418C2 4.72269 2.72269 4 3.61418 4C4.94434 4 5.70362 5.51856 4.90553 6.58269L2 10.4567H5.63191M11.1086 8.51971H7.64964V7.87404L10.4168 4H11.1086V8.51971ZM11.1086 8.51971H12.4922M11.1086 8.51971V10.4567"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-
-              <script type="text/javascript">
-                $$(".imperial-system-item, .metric-system-item").forEach(
-                  function (element, index) {
-                    element.classList.remove("system-item-hidden");
-                  }
-                );
-                $$(
-                  defaultSystem == "metric"
-                    ? ".imperial-system-item"
-                    : ".metric-system-item"
-                ).forEach(function (element, index) {
-                  element.classList.add("system-item-hidden");
-                });
-                if (defaultSystem == "metric")
-                  $(".system-switcher").classList.add(
-                    "system-switcher--active"
-                  );
-              </script>
-
               <button
                 class="button button--primary ml-auto"
                 onclick="calculate(this); animateElements();"
@@ -462,6 +403,7 @@
       </div>
     </div>
 
+    <script async src="./assets/js/datepicker.js"></script>
     <script async src="./assets/js/lib/math.min.js"></script>
     <script defer src="./assets/js/functions.js"></script>
   </body>

@@ -1,47 +1,8 @@
-@font-face {
-  font-family: "IBM Plex Sans Thai Looped";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400&display=swap");
-}
-@font-face {
-  font-family: "IBM Plex Sans Thai Looped";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@500&display=swap");
-}
-@font-face {
-  font-family: "IBM Plex Sans Thai Looped";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@600&display=swap");
-}
-@font-face {
-  font-family: "IBM Plex Sans Thai Looped";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@800&display=swap");
-}
-* {
-  font-family: "IBM Plex Sans Thai Looped", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeSpeed;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap");
+
+body,
+button {
+  font-family: "IBM Plex Sans Thai", sans-serif;
 }
 
 .input-field {
@@ -360,6 +321,11 @@ html.dark .input-hints__hint:not(html.dark .input-hints__hint--comma):hover {
 .input-wrapper .row {
   width: 100%;
 }
+
+.input-pad {
+  padding-top: 5px;
+}
+
 .input-wrapper--none-title .input {
   padding-top: 0;
 }
@@ -1063,19 +1029,19 @@ html.dark .modal-share__textarea {
 }
 .button--copy,
 .button--primary {
-  background-color: #5045e5;
-  border: 1px solid #5045e5;
+  background-color: #2ba8e0;
+  border: 1px solid #2ba8e0;
   color: #fff;
 }
 .button--copy:hover:not(:disabled):not(:active),
 .button--primary:hover:not(:disabled):not(:active) {
-  background-color: #4338ca;
+  background-color: #2ba8e0;
 }
 .button--copy:active,
 .button--primary:active {
   transition: 0s;
-  background-color: #6366f1;
-  border-color: #6366f1;
+  background-color: #2ba8e0;
+  border-color: #2ba8e0;
 }
 .button--copy {
   height: 42px;
@@ -1624,61 +1590,75 @@ html.dark .tab-item--active svg path[stroke] {
 }
 .system-switcher {
   margin: auto 0;
-  gap: 7px;
+  gap: 10px;
   height: 1.5rem;
-  width: 43px;
+  width: auto;
   border-radius: 0.75rem;
   transition: all 0.15s;
-  padding: 6px;
+  padding: 10px;
   display: flex;
-  background: #5045e5;
+  background: #2BA8E0;
   position: relative;
   cursor: pointer;
 }
-.system-switcher svg {
+
+.ponter{
+  cursor: pointer;
+}
+
+.system-switcher span {
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
   z-index: 1;
+  color: #000;
 }
-.system-switcher svg:nth-child(2) path {
-  stroke: #9ca3af;
-}
-.system-switcher svg:nth-child(3) path {
-  stroke: white;
-}
+
 .system-switcher__circle {
-  border-radius: 50%;
+  border-radius: 0.75rem;
+  padding: 10px;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
   background: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-  width: 1.25rem;
+  width: 2rem;
   height: 1.25rem;
   position: absolute;
   top: 0.125rem;
   left: 0.125rem;
   transition: 0.3s ease;
 }
+
+
 .system-switcher--active .system-switcher__circle {
-  left: 21px;
+  left: 32px;
 }
-.system-switcher--active svg:nth-child(2) path {
-  stroke: white;
+
+.system-switcher--active span:first-child {
+  color: black;
 }
-.system-switcher--active svg:last-child path {
-  stroke: #9ca3af;
+
+.system-switcher--active span:last-child {
+  color: black;
 }
+
 .system-switcher--format {
   padding: 4px 5px;
   gap: 6px;
 }
+
 html[dir="rtl"] .system-switcher__circle {
   right: 0.125rem;
   left: auto;
 }
+
 html[dir="rtl"] .system-switcher--active .system-switcher__circle {
   right: 21px;
   left: auto;
 }
+
 .header {
   background: #fff;
   position: relative;
