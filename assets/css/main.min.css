@@ -1035,13 +1035,13 @@ html.dark .modal-share__textarea {
 }
 .button--copy:hover:not(:disabled):not(:active),
 .button--primary:hover:not(:disabled):not(:active) {
-  background-color: #2ba8e0;
+  background-color: #2787B1;
 }
 .button--copy:active,
 .button--primary:active {
   transition: 0s;
-  background-color: #2ba8e0;
-  border-color: #2ba8e0;
+  background-color: #2787B1;
+  border-color: #2787B1;
 }
 .button--copy {
   height: 42px;
