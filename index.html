@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <title>Age Calculator</title>
   <meta charset="UTF-8" />
@@ -76,6 +75,19 @@
                     </path>
                   </svg>
                 </div>
+
+                <script type="text/javascript">
+                  // Select all elements with the class 'imperial-system-item' and add the 'system-item-hidden' class to hide them
+                  $$(".imperial-system-item").forEach(function (element, index) {
+                      element.classList.add("system-item-hidden");
+                  });
+                  // Select all elements with the class 'metric-system-item' and remove the 'system-item-hidden' class to show them
+                  $$(".metric-system-item").forEach(function (element, index) {
+                      element.classList.remove("system-item-hidden");
+                  });
+                  // Add the 'system-switcher--active' class to the element with the class 'system-switcher' to indicate that the metric system is active
+                  $(".system-switcher").classList.add("system-switcher--active");
+              </script>
 
                 <div class="input-hints input-pad row">
                   <button class="input-hints__hint" onclick="setDate('date', -1)">

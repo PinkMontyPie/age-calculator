@@ -62,22 +62,11 @@ window.isMetricSystem = function() {
 }
 
 window.setSystem = function(system) {
-	const add = (system == "metric" ? ".imperial-system-item" : ".metric-system-item");
-	$$(".system-item-hidden").forEach(element => {
-		element.classList.remove("system-item-hidden");
-	});
-	$$(add).forEach(element => {
-		element.classList.add("system-item-hidden");
-	});
 	localStorage.setItem("system", system);
 }
 
 window.toggleSystem = function(button) {
-	button.classList.toggle('system-switcher--active');
-	if(button.classList.contains('system-switcher--active')) {
-		return setSystem('metric');
-	}
-	return setSystem('imperial');
+	return setSystem('metric');
 }
 
 window.isHidden = function(element) {
