@@ -181,6 +181,8 @@ button {
 .input-field--mixed-only {
   justify-content: center;
 }
+
+
 .input-field--mixed-only .input-field__input {
   --fontStep: 12px;
   --maxWidth: var(--fontStep);
@@ -460,7 +462,7 @@ html.dark .input-wrapper--square > .input-field__hint {
 }
 .input__title--work-hours-calculator {
   position: relative;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .input--abv {
   max-width: 62px;
@@ -502,7 +504,7 @@ html.dark .input__title {
   color: #d1d5db;
 }
 html.dark .input__title--work-hours-calculator {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .hidden,
 .system-item-hidden {
@@ -569,7 +571,7 @@ html.dark .input-button:hover {
   color: #374151;
 }
 .checkbox__input:checked + .checkbox__box {
-  background-color: #2BA8E0;
+  background-color: #18a69d;
 }
 .checkbox__input:checked + .checkbox__box::after {
   left: 22px;
@@ -940,7 +942,7 @@ html.dark .modal-search-item:hover {
 }
 .modal-share__button--active {
   background: #dbeafe;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .modal-share__textarea {
   display: block;
@@ -1007,12 +1009,13 @@ html.dark .modal-share__textarea {
   backdrop-filter: blur(4px);
 }
 .button {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 20px;
   border-radius: 6px;
   cursor: pointer;
@@ -1029,8 +1032,8 @@ html.dark .modal-share__textarea {
 }
 .button--copy,
 .button--primary {
-  background-color: #2ba8e0;
-  border: 1px solid #2ba8e0;
+  background-color: #18A69D;
+  border: 1px solid #18A69D;
   color: #fff;
 }
 .button--copy:hover:not(:disabled):not(:active),
@@ -1136,7 +1139,7 @@ html.dark .button--secondary {
 }
 .calculator-content--basic button:not(.button-switcher).indigo,
 .calculator-content--scientific button:not(.button-switcher).indigo {
-  background-color: #2BA8E0;
+  background-color: #18a69d;
   color: #fff;
 }
 .calculator-content--basic button:not(.button-switcher).indigo:hover,
@@ -1177,7 +1180,7 @@ html.dark .button--secondary {
 .calculator-content--basic button:not(.button-switcher).basic-button--active,
 .calculator-content--scientific
   button:not(.button-switcher).basic-button--active {
-  border-color: #2BA8E0;
+  border-color: #18a69d;
 }
 .calculator-content--basic button:not(.button-switcher).purple,
 .calculator-content--scientific button:not(.button-switcher).purple {
@@ -1472,10 +1475,10 @@ html.dark
   background: #eef2ff;
 }
 .button-switcher--active path[stroke] {
-  stroke: #2BA8E0;
+  stroke: #18a69d;
 }
 .button-switcher--active path[fill] {
-  fill: #2BA8E0;
+  fill: #18a69d;
 }
 .button-switcher--active .button-switcher__text {
   color: #312e81;
@@ -1567,20 +1570,20 @@ html.dark .tab-item svg path[stroke] {
   height: 0;
   position: absolute;
   bottom: -1px;
-  background-color: #2BA8E0;
+  background-color: #18a69d;
 }
 .tab-item--active {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .tab-item--active::after {
   height: 2px;
-  background-color: #2BA8E0;
+  background-color: #18a69d;
 }
 .tab-item--active svg path[fill] {
   fill: #e0e7ff;
 }
 .tab-item--active svg path[stroke] {
-  stroke: #2BA8E0;
+  stroke: #18a69d;
 }
 html.dark .tab-item--active svg path[fill] {
   fill: #818cf8;
@@ -1597,7 +1600,7 @@ html.dark .tab-item--active svg path[stroke] {
   transition: all 0.15s;
   padding: 10px;
   display: flex;
-  background: #2BA8E0;
+  background: #18a69d;
   position: relative;
   cursor: pointer;
 }
@@ -1915,7 +1918,7 @@ html.dark .header-popup__button:hover {
   font-weight: 500;
 }
 .header-breadcrumbs__link--text:hover {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 html.dark .header-breadcrumbs__separate path[fill] {
   fill: #6b7280;
@@ -2273,7 +2276,7 @@ sup {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 1rem;
+  padding: 10px;
   width: 100%;
 }
 .intro__calculator .basic-button {
@@ -2497,7 +2500,7 @@ html.dark .calculator-basic__input {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .calculators__subtitle {
   font-size: 1.875rem;
@@ -2585,7 +2588,7 @@ html.dark .calculators-category__title {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: center;
-  color: #2BA8E0;
+  color: #18a69d;
   transition: 0.15s ease;
 }
 .calculator-category__link:hover {
@@ -2856,7 +2859,7 @@ html.dark .air-datepicker-body--cells.-years- {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #2BA8E0;
+  background-color: #18a69d;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -2997,8 +3000,8 @@ html.dark .air-datepicker-cell.-day-.-other-month-:hover {
 }
 .timepicker__input:focus {
   border-width: 2px;
-  border-color: #2BA8E0;
-  color: #2BA8E0;
+  border-color: #18a69d;
+  color: #18a69d;
 }
 .timepicker__input:focus::-moz-placeholder {
   opacity: 0;
@@ -3072,8 +3075,8 @@ html.dark .timepicker__input::placeholder {
   color: #fff;
 }
 html.dark .timepicker__input:focus {
-  border-color: #2BA8E0;
-  color: #2BA8E0;
+  border-color: #18a69d;
+  color: #18a69d;
 }
 .tag {
   display: inline;
@@ -3129,7 +3132,7 @@ html.dark .tag--purple {
   border-radius: 8px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.0588235294),
     0 1px 3px 0 rgba(0, 0, 0, 0.1019607843);
-  background-color: #eff6ff;
+  background-color: #F0FDFB;
   overflow: hidden;
 }
 .calculator-result__col {
@@ -3212,12 +3215,13 @@ html.dark .calculator-error__item::before {
   background-color: #fecaca;
 }
 .table-cell {
-  padding: 16px 24px;
+  
+  padding: 20px 24px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 24px;
   color: #374151;
-  background-color: #eff6ff;
+  background-color: #F0FDFB;
 }
 .table-cell--legend {
   display: flex;
@@ -3232,7 +3236,7 @@ html.dark .calculator-error__item::before {
   line-height: 1.25rem;
 }
 .table-cell--dark {
-  background-color: #dbeafe;
+  background-color: #2D2D2D;
 }
 .table-cell--only {
   padding: 32px 24px;
@@ -3242,7 +3246,7 @@ html.dark .calculator-error__item::before {
   flex-wrap: wrap;
 }
 .table-cell--date-count {
-  gap: 1.25rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 .table-cell--controls {
@@ -3300,11 +3304,11 @@ html.dark .calculator-error__item::before {
 }
 .table-cell--only-title {
   text-transform: uppercase;
-  color: #312e81;
+  color: #18a69d;
   letter-spacing: 0.05em;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 .table-cell--nogap {
   gap: 4px;
@@ -3332,10 +3336,10 @@ html.dark .calculator-error__item::before {
 }
 @media only screen and (max-width: 768px) {
   .table-cell--only-title {
-    padding: 16px;
+    padding: 20px 40px;
   }
   .table-cell--only {
-    padding: 32px 16px;
+    padding: 32px 40px;
   }
 }
 html.dark .table-cell {
@@ -3809,7 +3813,7 @@ html.dark .table-progress-list__item {
   left: 40%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: #2BA8E0;
+  background: #18a69d;
   border-radius: 50%;
   position: absolute;
   border: 2px solid #fff;
@@ -4060,7 +4064,7 @@ html.dark .result-age .green-cell {
 .result-controls__button {
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .result-legend-items {
   display: flex;
@@ -4130,7 +4134,7 @@ html.dark .prime-factorization-calculator td::after {
 }
 @media only screen and (min-width: 1024px) {
   .calculator-settings {
-    max-width: 336px;
+    max-width: 700px;
   }
 }
 .calculator-setting {
@@ -4251,10 +4255,10 @@ script + .calculator-content {
 }
 @media only screen and (max-width: 768px) {
   .calculator-content {
-    padding: 32px 16px;
+    padding: 40px;
   }
   .calculator-content--small {
-    padding: 12px 16px;
+    padding: 20px 40px;
   }
   .calculator-content--options {
     padding: 0;
@@ -4292,7 +4296,7 @@ script + html.dark .calculator-content {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.25rem;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .calculator-content-head--always {
   pointer-events: none;
@@ -4740,7 +4744,7 @@ html.dark .dice-point {
   pointer-events: none;
 }
 html.dark .fraction-button {
-  background: #2BA8E0;
+  background: #18a69d;
   outline-color: #4338ca;
   color: #fff;
 }
@@ -4760,7 +4764,7 @@ html.dark .fraction-button--only {
   z-index: -1;
 }
 .fraction-radio:checked + .fraction-button {
-  outline-color: #2BA8E0;
+  outline-color: #18a69d;
   z-index: 20;
   position: relative;
 }
@@ -5041,7 +5045,7 @@ html.dark .calculator-about__wrapper {
   list-style: none !important;
 }
 .calculator-about a {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .calculator-about a:hover {
   color: #4338ca;
@@ -5316,7 +5320,7 @@ html.dark .calculator-related__text--title {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .categories__title {
   font-size: 1.875rem;
@@ -5506,7 +5510,7 @@ html.dark .page-about {
   line-height: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #2BA8E0;
+  color: #18a69d;
   letter-spacing: 0.025em;
 }
 @media only screen and (min-width: 768px) {
@@ -5552,7 +5556,7 @@ html.dark .page-about {
   color: #6b7280;
 }
 .about a {
-  color: #2BA8E0;
+  color: #18a69d;
   text-decoration: underline;
   text-underline-offset: 4px;
   transition: 0.15s;
@@ -5638,7 +5642,7 @@ html.dark .about ul li {
   color: #d1d5db;
 }
 html.dark .about a {
-  color: #2BA8E0;
+  color: #18a69d;
 }
 html.dark .about h2:not(.about__title) {
   color: #fff;
@@ -5816,7 +5820,7 @@ html.dark .contacts-address__text {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 800;
-  color: #2BA8E0;
+  color: #18a69d;
 }
 .not-found__line {
   height: 100px;
@@ -5835,7 +5839,7 @@ html.dark .contacts-address__text {
   line-height: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #2BA8E0;
+  color: #18a69d;
   letter-spacing: 0.025em;
 }
 .not-found__title {
@@ -5861,7 +5865,7 @@ html.dark .contacts-address__text {
   margin-right: auto;
   margin-top: 2.5rem;
   padding: 0.5rem 0.75rem;
-  background: #2BA8E0;
+  background: #18a69d;
   color: #fff;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -5976,4 +5980,21 @@ html.dark-mode {
   .ads-square div {
     display: none;
   }
+}
+
+.break {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .break {
+    width: 350px;
+    padding: 20px;
+  }
+
+  .padding-calculator{
+    padding: 20px;
+  }
+
 }

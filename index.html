@@ -13,7 +13,6 @@
     as="style" />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600;800&display=swap"
     rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
   <script type="text/javascript">
     window._ = document.getElementById.bind(document);
     window.$ = document.querySelector.bind(document);
@@ -23,11 +22,12 @@
   </script>
   <link rel="stylesheet" href="./assets/css/main.min.css" />
   <script src="./assets/js/all-calculators.js" defer></script>
+
 </head>
 
 <body style="background-color: transparent !important; min-height: 0 !important">
-  <div class="w-full flex flex-col md:flex-row">
-    <div class="p-4">
+  <div style="width:100%;">
+    <div style="float: left; border-radius: 10%; " class="break">
       <div class="calculator-settings">
         <div class="calculator-setting" id="calculator_form">
           <div class="calculator-content col">
@@ -138,7 +138,8 @@
         </div>
       </div>
     </div>
-    <div style="float: left; padding: 15px; overflow: scroll">
+
+    <div style="float: left;" class="padding-calculator">
       <div class="calculator-result calculator-result--error col" id="error-box">
         <div class="row">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +165,7 @@
 
         <div class="calculator-result col">
           <p class="table-cell table-cell--dark table-cell--only-title">
-            อายุ
+            อายุของฉัน
           </p>
           <div class="table-cell table-cell--age table-cell--only row">
             <div class="col result-age__text animate">
@@ -176,20 +177,21 @@
               <p class="result-text">หรือ 22,050,720 นาที</p>
               <p class="result-text">หรือ 1,323,043,200 วินาที</p>
             </div>
-            <div class="row table-cell--date-count table-cell--date-left pt-4">
+            <div class="row table-cell--date-count table-cell--date-left">
               <div class="col result-age result-age--small result-age--from">
                 <p class="date-title">
                   จาก
                   <span class="date-title date-title--date animate">28 Mar 1981<span></span></span>
                 </p>
                 <div>
-                  <p>M</p>
-                  <p>T</p>
-                  <p>W</p>
-                  <p>T</p>
-                  <p>F</p>
-                  <p>S</p>
-                  <p>S</p>
+                  <p>จ</p>
+                  <p>อ</p>
+                  <p>พ</p>
+                  <p>พ</p>
+                  <p>ศ</p>
+                  <p>ส</p>
+                  <p>อ</p>
+
                 </div>
                 <div class="result-age--days animate">
                   <p>23</p>
@@ -242,13 +244,14 @@
                   <span class="date-title date-title--date animate">1 Mar 2023</span>
                 </p>
                 <div>
-                  <p>M</p>
-                  <p>T</p>
-                  <p>W</p>
-                  <p>T</p>
-                  <p>F</p>
-                  <p>S</p>
-                  <p>S</p>
+                  <p>จ</p>
+                  <p>อ</p>
+                  <p>พ</p>
+                  <p>พ</p>
+                  <p>ศ</p>
+                  <p>ส</p>
+                  <p>อ</p>
+
                 </div>
                 <div class="result-age--days animate">
                   <p>27</p>
