@@ -3236,7 +3236,7 @@ html.dark .calculator-error__item::before {
   line-height: 1.25rem;
 }
 .table-cell--dark {
-  background-color: #2D2D2D;
+  background-color: #cef9f2;
 }
 .table-cell--only {
   padding: 32px 24px;
